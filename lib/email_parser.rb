@@ -12,7 +12,7 @@ class EmailAddressParser
 
   def parse
     new_arr = @email_addresses.split(/\s|\,/).uniq.reject{ |item| item.nil? || item == '' }
-
+    new_arr
   end
 
 end
